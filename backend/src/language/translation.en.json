@@ -1,0 +1,16 @@
+{
+  "ERR_INTERNAL_SERVER": "Internal Server Error.",
+  "ERR_URL_NOT_FOUND": "Requested URL not found",
+  "ERR_GENRIC_SYNTAX": "JSON request could not be parsed.",
+
+  "PRODUCT_DETAILS_FETCH_SUCCESS": "Product details fetched successfully.",
+  "PRODUCTS_GET_SUCCESS": "All Products fetched successfully.",
+  "PRODUCTS_SIZES_GET_SUCCESS": "All product sizes fetched successfully.",
+  "PRODUCTS_COLORS_GET_SUCCESS": "All product colors fetched successfully.",
+  "ENTER_COUPON": "Enter coupon.",
+  "COUPON_NOT_FOUND": "This coupon is not available.",
+  "COUPON_IS_USED": "This coupon has been availed.",
+  "GET_DISCOUNT_PERCENTAGE": "Fetched discount price successfully.",
+  "NOT_ELIGIBLE": "Not eligible for this coupon,",
+  "ORDER_SUCCESSFULL": "Order placed successfully."
+}

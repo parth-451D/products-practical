@@ -1,0 +1,41 @@
+.bg-grey {
+  background-color: #ede9e9;
+}
+
+.size {
+  background: white;
+  color: #676666;
+  height: 60px;
+  width: 60px;
+  border-radius: 999px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.product-card {
+  height: 25rem;
+  width: 25rem;
+}
+.details-cart {
+  height: 45rem;
+  width: 40rem;
+}
+
+.active {
+  background-color: #7b7b7b !important;
+  color: white
+}
+
+.active-color {
+  border: 5px solid #e7b0b0;
+}
+
+input {
+  outline: none;
+}
+
+.bg-main{
+  background: #8b5cf6 var(
+    --tw-gradient-to-position);
+}

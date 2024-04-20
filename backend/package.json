@@ -1,0 +1,62 @@
+{
+  "name": "loft_backend",
+  "version": "1.0.0",
+  "description": "Node ts Demo",
+  "main": "server.js",
+  "scripts": {
+    "tsc": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts' --fix",
+    "start": "tsc --watch & nodemon --inspect dist",
+    "build": "tsc && mkdir -p uploads && mkdir -p dist/templates && cp -R src/templates/* dist/templates && mkdir -p dist/language && cp -R src/language/* dist/language",
+    "build-dev": "tsc && mkdir -p uploads && mkdir -p dist/templates && cp -R src/templates/* dist/templates && mkdir -p dist/language && cp -R src/language/* dist/language",
+    "build-stage": "tsc && mkdir -p uploads && mkdir -p dist/templates && cp -R src/templates/* dist/templates && mkdir -p dist/language && cp -R src/language/* dist/language",
+    "build-prod": "tsc && mkdir -p uploads && mkdir -p dist/templates && cp -R src/templates/* dist/templates && mkdir -p dist/language && cp -R src/language/* dist/language",
+    "env": "sync-dotenv --sample env.sample"
+  },
+  "author": "Solution Analysts pvt ltd",
+  "license": "ISC",
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run env",
+      "commit-msg": "sh ./.githooks/commit-msg.sh ${HUSKY_GIT_PARAMS}"
+    }
+  },
+  "dependencies": {
+    "@types/glob": "^8.1.0",
+    "@types/minimatch": "^5.1.2",
+    "axios": "^1.5.0",
+    "class-validator": "^0.14.0",
+    "compression": "^1.7.3",
+    "cors": "^2.8.5",
+    "crypto": "^1.0.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-handlebars": "^7.1.2",
+    "helmet": "^6.0.1",
+    "jm-ez-l10n": "^1.0.0",
+    "jm-ez-mysql": "^4.0.0",
+    "lodash": "^4.17.21",
+    "method-override": "^3.0.0",
+    "minimatch": "^9.0.3",
+    "moment": "^2.29.4",
+    "moment-timezone": "^0.5.41",
+    "morgan": "^1.10.0",
+    "mysql2": "^3.6.1",
+    "node-jsencrypt": "^1.0.0",
+    "node-uuid": "^1.4.8",
+    "nodemon": "^2.0.21",
+    "sequelize": "^6.33.0",
+    "sync-dotenv": "^2.6.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.14",
+    "@types/jsonwebtoken": "^9.0.2",
+    "@types/node": "^13.13.52",
+    "husky": "^8.0.3",
+    "ts-node": "^10.9.1",
+    "tslint": "^6.1.3",
+    "typescript": "^5.2.2"
+  }
+}
